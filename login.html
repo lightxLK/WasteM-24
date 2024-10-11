@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Waste Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    /* Inline styles for login.html */
+    body {
+      background-color: #e7f0f7; /* Light background */
+    }
+
+    header {
+      background-color: #00796b; /* Darker green for header */
+    }
+
+    .container {
+      background-color: #ffffff; /* White background for login container */
+      padding: 40px 20px; /* Padding for better spacing */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    h2 {
+      color: #00796b; /* Darker shade for heading */
+      text-align: center; /* Centering the heading */
+    }
+
+    p {
+      color: #555; /* Softer text color */
+      text-align: center; /* Center-aligning the paragraph */
+    }
+
+    .form-group {
+      margin-bottom: 15px; /* Spacing between form groups */
+    }
+
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff; /* Button color */
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      margin: 10px 0; /* Margin for spacing */
+      transition: background-color 0.3s ease, transform 0.2s;
+      width: 100%; /* Full width button */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1><a href="index.html" id="home-link" style="text-decoration: none; color: inherit;">Waste Management System</a></h1>
+  </header>
+
+  <!-- Login Form Section -->
+  <div id="content" class="container">
+    <h2>Login</h2>
+    <p>Welcome back! Please enter your login details below.</p>
+
+    <form id="login-form" action="login.php" method="POST">
+      <!-- Username Field -->
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- Link to Registration Page -->
+    <p class="text-center">New user? <a href="register.html">Register here</a>.</p>
+  </div>
+
+</body>
+</html>
