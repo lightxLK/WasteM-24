@@ -8,11 +8,24 @@
   <script src="script.js" defer></script>
   <style>
     body {
-      background-color: #95d1ff; /* Light background for a fresh look */
+      background-color: #d5edff; /* Light background for a fresh look */
+      font-family: Cambria, serif; /* Cambria font */
+      margin: 0;
+      padding: 0;
     }
-    h1, h2 {
-      color: #ffffff; /* Darker shade for the headings */
+    h1 {
+  color: #000747; /* Darker shade for the headings */
+  text-align: center; /* Centering the headings */
+    }
+
+    h2 {
+      color: #ff7878; /* Darker shade for the headings */
       text-align: center; /* Centering the headings */
+    }
+
+    header {
+      background-color: #ffddc7; /* Lighter background for the header */
+      padding: 20px;
     }
     p {
       text-align: center; /* Center-aligning the paragraph */
@@ -21,13 +34,13 @@
     .container {
       padding: 40px 20px; /* Increased padding for better spacing */
       max-width: 600px;
-      margin: auto; /* Center the container */
+      margin: 50px auto; /* Center the container */
       background-color: #ffffff; /* White background for the form */
       border-radius: 10px; /* Rounded corners */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     }
     .form-group {
-      margin-bottom: 15px; /* Spacing between form groups */
+      margin-bottom: 20px; /* Spacing between form groups */
     }
     .form-group label {
       display: block;
@@ -36,10 +49,11 @@
       color: #000000; /* Label color */
     }
     .form-group input {
-      width: 100%;
+      width: calc(100% - 22px);
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 5px;
+      box-sizing: border-box;
       font-size: 1em;
     }
     .form-group input:focus {
@@ -48,16 +62,16 @@
     }
     button {
       display: inline-block;
-      padding: 10px 20px;
+      width: 100%;
+      padding: 15px;
       background-color: #007bff; /* Button color */
       color: #ffffff;
       border: none;
       border-radius: 5px;
       cursor: pointer;
       font-size: 1em;
-      margin: 10px 0; /* Margin for spacing */
+      margin: 20px 0; /* Margin for spacing */
       transition: background-color 0.3s ease, transform 0.2s;
-      width: 100%; /* Full width button */
     }
     button:hover {
       background-color: #0069d9; /* Darker shade on hover */
@@ -67,6 +81,7 @@
       text-align: center; /* Center-aligning text */
     }
   </style>
+  
 </head>
 <body>
 
