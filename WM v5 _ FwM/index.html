@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waste Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      background-color: #fff2ce; /* Light grey background for a clean look */
+      font-family: Cambria, serif; /* Cambria font */
+      color: #000000; /* Default text color */
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav {
+      background-color: #f6ffce; /* Dark teal for the navbar */
+      padding: 15px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: rgb(39, 39, 39);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #f2ffbf; /* Change this to the color you want on hover */
+      background-color: #00685f; /* Optional: Change background color on hover */
+    }
+    #content {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    h1 {
+      color: #0f003a; /* Darker shade for the heading */
+      margin-bottom: 20px;
+    }
+    p {
+      color: #666; /* Softer text color for the paragraph */
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .cta-buttons {
+      margin-top: 30px;
+    }
+    .cta-button {
+      background-color: #c5fff8; /* Button background */
+      color: rgb(0, 0, 0);
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1em;
+      margin: 5px;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background-color: #a0ffc8; /* Darker shade on hover */
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #00352f; /* Matching footer color */
+      color: white;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html" id="home-link">Home</a></li>
+      <li><a href="register.html" id="register-link">Register</a></li>
+      <li><a href="login.html" id="login-link">Login</a></li>
+      <li><a href="data_entry.html" id="data-entry-link">Data Entry</a></li>
+      <li><a href="reports.html" id="reports-link">Reports</a></li>
+    </ul>
+    <div id="user-info">
+      <div id="user-greeting" style="display:none;">
+        Welcome, <span id="username-display-greeting"></span>!
+      </div>
+      <span id="username-display" style="display:none; margin-right: 10px;"></span>
+      <button id="logout-btn" onclick="logout()" class="logout-button" style="display:none;">Log Out</button>
+      <a href="login.html" id="login-btn" class="cta-button" style="display:none;">Log In</a>
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div id="content" class="container">
+    <h1>Welcome to the Waste Management System</h1>
+    <p>Effortlessly manage waste data, track progress, and view comprehensive reports.</p>
+    <div class="cta-buttons">
+      <a href="register.html" class="cta-button">Register Now</a>
+      <a href="login.html" class="cta-button">Login</a>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2024 Waste Management System. All rights reserved. | Created by <a href="https://lightxlk.github.io" target="_blank" style="text-decoration: none; color: inherit;">Light</a>
+</footer>
+
+</body>
+</html>
