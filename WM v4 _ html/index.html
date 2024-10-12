@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waste Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html" id="home-link">Home</a></li>
+      <li><a href="register.html" id="register-link">Register</a></li>
+      <li><a href="login.html" id="login-link">Login</a></li>
+      <li><a href="data_entry.html" id="data-entry-link">Data Entry</a></li>
+      <li><a href="reports.html" id="reports-link">Reports</a></li>
+    </ul>
+    <div id="user-info">
+      <span id="username-display" style="display:none;"></span>
+      <button id="logout-btn" onclick="logout()" class="logout-button" style="display:none;">Log Out</button>
+      <a href="login.html" id="login-btn" class="cta-button" style="display:none;">Log In</a>
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div id="content" class="container">
+    <h1>Welcome to the Waste Management System</h1>
+    <p>Effortlessly manage waste data, track progress, and view comprehensive reports.</p>
+    <div class="cta-buttons">
+      <a href="register.html" class="cta-button">Register Now</a>
+      <a href="login.html" class="cta-button">Login</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 Waste Management System. All rights reserved.
+  </footer>
+
+</body>
+</html>

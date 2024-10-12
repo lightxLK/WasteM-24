@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Entry - Waste Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Waste Management System</h1>
+  </header>
+
+  <!-- Data Entry Form Section -->
+  <div id="content" class="container">
+    <h2>Enter Waste Data</h2>
+    <p>Please fill in the details below to record your waste data.</p>
+
+    <form id="data-entry-form" action="data_entry.php" method="POST">
+      <!-- Date Field -->
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <!-- Food Waste Field -->
+      <div class="form-group">
+        <label for="food_waste">Food Waste (kg):</label>
+        <input type="number" id="food_waste" name="food_waste" placeholder="Enter food waste quantity" required>
+      </div>
+
+      <!-- Recycled Water Field -->
+      <div class="form-group">
+        <label for="recycled_water">Recycled Water (liters):</label>
+        <input type="number" id="recycled_water" name="recycled_water" placeholder="Enter recycled water quantity" required>
+      </div>
+
+      <!-- Solid Waste Field -->
+      <div class="form-group">
+        <label for="solid_waste">Solid Waste (kg):</label>
+        <input type="number" id="solid_waste" name="solid_waste" placeholder="Enter solid waste quantity" required>
+      </div>
+
+      <!-- Wet Waste Field -->
+      <div class="form-group">
+        <label for="wet_waste">Wet Waste (kg):</label>
+        <input type="number" id="wet_waste" name="wet_waste" placeholder="Enter wet waste quantity" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Data</button>
+    </form>
+  </div>
+
+</body>
+</html>
